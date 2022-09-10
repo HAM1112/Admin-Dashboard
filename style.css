@@ -20,6 +20,10 @@
 
 }
 
+img:hover{
+    cursor: pointer;
+}
+
 .container > div{
     padding: 20px;
 }
@@ -41,6 +45,12 @@
 }
 .dashboard > div:hover{
    background-color: #cd1836; 
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-top-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   cursor: pointer;
+   box-shadow: inset 2px 2px 10px #000000;
 }
 
 .dashboard > .logo{
@@ -56,6 +66,7 @@
     padding: 20px 50px;
 }
 
+
 .header > div{
     display: flex;
 }
@@ -69,10 +80,12 @@
     border-radius: 25px;
     padding: 5px 10px;
 }
+.header input:hover{
+    border: 3px solid #00008B;
+}
 .header input:focus{
     outline: none;
     border: 3px solid #0000ff;
-
 }
 .header .profile-settings{
     justify-content: end;
@@ -110,9 +123,13 @@
 .extra > div{
     background-color: #E94560;
     width: 70px;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 25px;
     font-weight: bold;
+}
+.extra > div:hover{
+    background-color: #cd1836;
+    padding: 12px;
 }
 
 .main{
@@ -120,6 +137,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
+    box-shadow: inset 3px 3px 7px #000000;
 }
 
 .main > div {
@@ -140,11 +158,19 @@
 
 .cards> div{
     background-color: #0F3460;
-    border-left: 10px solid #16213E;
+    border-left: 15px solid #16213E;
     border-radius: 15px;
     height: 300px;
     overflow: auto;
     box-shadow: 5px 3px 20px #000000;
+}
+.cards > div:hover{
+    cursor: pointer;
+    border-top: 4px solid #0F3460;
+    border-right: 4px solid #0F3460;
+    border-bottom: 4px solid #0F3460;
+    border-left: 20px solid #16213E;
+    box-shadow: 7px 6px 15px #000000;
 }
 .cards > div::-webkit-scrollbar {
     width: 0.5em;
@@ -176,12 +202,33 @@
     justify-content: start;
     padding: 10px;
 }
+.announcement h3:hover, .announcement span:hover{
+    color: #533483;
+    font-weight: bolder;
+    cursor: pointer;
+}
 
 .articles{
     background-color: #16213E;
     border-radius: 25px;
     overflow: hidden;
     padding: 20px;
+    box-shadow: 5px 3px 20px #000000;
+}
+.articles > div {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+.articles > div > div > p{
+    font-size: smaller;
+}
+
+.articles img{
+    height: 50px;
+    border-radius: 25px;
 }
 
 article{
